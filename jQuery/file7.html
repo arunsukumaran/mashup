@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SELECTORS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button.1").click(function(){
+				$("*").hide();
+			})
+			$("button.2").click(function(){
+				$(this).hide();
+			})
+			$("button.3").click(function(){
+				$("p:first").hide();
+			})
+			$("button.4").click(function(){
+				$("[href]").hide();
+			})
+			$("button.5").click(function(){
+				$(":button").css("background-color","red");
+			})
+			$("button.6").click(function(){
+				$("button:even").css("background-color","yellow");
+			})
+			$("button.7").click(function(){
+				$("button:odd").css("background-color","blue");
+			})
+		});
+	</script>
+</head>
+<body>
+	<h1>HEADING</h1>
+	<p>HELLO WORLD</p>
+	<p>HAI TO ALL</p>
+	<a href="hai">hai</a><br>
+	<button class="1">1</button>
+	<button class="2">2</button>
+	<button class="3">3</button>
+	<button class="4">4</button>
+	<button class="5">5</button>
+	<button class="6">6</button>
+	<button class="7">7</button>
+</body>
+</html>

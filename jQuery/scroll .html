@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCROLL</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				<button id="bottom">Scroll to Bottom</button>
+				<h1>jQuery</h1>
+				<p>
+					jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.[3] It is free, open-source software using the permissive MIT License.[2] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.[4][5]
+				</p>
+				<p>
+					jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+				</p>
+				<p>
+					The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.[6]
+				</p>
+				<p>
+					Microsoft and Nokia bundle jQuery on their platforms.[7] Microsoft includes it with Visual Studio[8] for use within Microsoft's ASP.NET AJAX and ASP.NET MVC frameworks while Nokia has integrated it into the Web Run-Time widget development platform.[9]
+				</p>
+				<p><h3>Overview</h3>
+					jQuery, at its core, is a Document Object Model (DOM) manipulation library. The DOM is a tree-structure representation of all the elements of a Web page. jQuery simplifies the syntax for finding, selecting, and manipulating these DOM elements. For example, jQuery can be used for finding an element in the document with a certain property (e.g. all elements with an h1 tag), changing one or more of its attributes (e.g. color, visibility), or making it respond to an event (e.g. a mouse click).
+				</p>
+				<p>
+					jQuery also provides a paradigm for event handling that goes beyond basic DOM element selection and manipulation. The event assignment and the event callback function definition are done in a single step in a single location in the code. jQuery also aims to incorporate other highly used JavaScript functionality (e.g. fade ins and fade outs when hiding elements, animations by manipulating CSS properties).
+				</p>
+				
+				<p>
+					The principles of developing with jQuery are:	
+				</p>
+				<p>
+				    Separation of JavaScript and HTML: The jQuery library provides simple syntax for adding event handlers to the DOM using JavaScript, rather than adding HTML event attributes to call JavaScript functions. Thus, it encourages developers to completely separate JavaScript code from HTML markup.
+				</p>
+				<p>
+				    Brevity and clarity: jQuery promotes brevity and clarity with features like "chainable" functions and shorthand function names.
+				</p>
+				<p>
+				    Elimination of cross-browser incompatibilities: The JavaScript engines of different browsers differ slightly so JavaScript code that works for one browser may not work for another. Like other JavaScript toolkits, jQuery handles all these cross-browser inconsistencies and provides a consistent interface that works across different browsers.
+				    Extensibility: New events, elements, and methods can be easily added and then reused as a plugin.
+
+				</p> 
+				<p>
+					<h3>History</h3>
+					jQuery was originally released in January 2006 at BarCamp NYC by John Resig and was influenced by Dean Edwards' earlier cssQuery library.[10][11] It is currently maintained by a team of developers led by Timmy Willison (with the jQuery selector engine, Sizzle, being led by Richard Gibson).
+				</p>
+				<p>
+					jQuery was originally licensed under the CC BY-SA 2.5, and relicensed to the MIT license in 2006.[12] At the end of 2006, it was dual-licensed under GPL and MIT licenses.[13] As this led to some confusion, in 2012 the GPL was dropped and is now only licensed under the MIT license.[14]
+				</p>
+				<p>
+					In 2015, jQuery was used on 63% of the top 1 million websites (according to BuiltWith), and 17% of all Internet websites.[15] As of June 2018, jQuery is used on 73% of the top 1 million websites, and by 22.4% of all websites (according to BuiltWith).[16]
+				</p>
+				<button id="top">Scroll to Top</button>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		 $(document).ready(function(){
+		 	$("#top").click(function(){
+		 		$("html , body").animate({ scrollTop:0 }, 10000);
+		 		return false;
+		 			
+		 	});  
+
+		});
+		 $(document).ready(function(){
+		 $("#bottom").click(function(){
+		 		$("html , body").animate({ scrollTop:1500 }, 12000);
+		 		return false;	
+		 	}); 
+		 });
+	</script>
+</body>
+</html>

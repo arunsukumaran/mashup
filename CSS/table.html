@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TABLE</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<style type="text/css">
+	.circle {
+            
+            background-color:white;
+            border:1px solid white;    
+            height:50px;
+            border-radius:50%;
+            width:50px;
+            cursor: pointer;
+                }
+     i#va{
+     	padding:10px;
+     	cursor: pointer;
+     }
+
+     select.vr{
+     	border: 0px;
+     	outline:0px;
+     	background: white;
+     }
+	table{
+		border-collapse:collapse; 
+	}
+	table,th,td{
+		border:2px solid black;
+	}	
+	th.ar{
+		padding-left: 5px;
+		padding-right:100px;
+	}
+	tr,th,td.av{
+		border: 3px solid silver;
+	}
+	</style>
+</head>
+<body style="border:10px solid lavender;
+padding-left: 30px; margin:200px;
+padding: 40px;
+border-radius: 10px;
+color: slategrey;
+font-family: sans-serif;">
+		Show<select style="border-radius: unset;
+		width: 50px;">
+			<option>5</option>
+		</select>entries	
+	
+	<a style="margin-left: 300px;
+		font-size: 40px;">
+			Customer<b>Details</b>
+		</a>
+		<div style="float:right;">
+		<form style="margin-left: 200px;">
+			<i style="margin-left: 180px" class="fas fa-search"></i>
+			<input type="text" name="text" placeholder="Search">
+		</form>
+		</div>
+	<table style="border:3px solid silver;">
+		<tr style="border: 3px solid silver">
+			<th>
+				#
+			</th>
+			<th class="ar">
+				Name
+				<select style="border: 0px;
+				outline:0px;margin-left: 20px;
+				background: white;
+				">
+					
+				</select>
+			</th>
+			<th class="ar">
+				Address
+			</th>
+			<th class="ar">
+				City
+				<select class="vr"></select>
+			</th>
+			<th class="ar">
+				Pin Code
+			</th>
+			<th class="ar">
+				Country
+				<select class="vr"></select>
+			</th>
+			<th class="ar">
+				Actions
+			</th>
+		</tr>
+		<tr class="av">
+			<td class="av">
+				1
+			</td>
+			<td class="av">
+				Thomas Hardy
+			</td>
+			<td class="av">
+				89 Chiaroscuro Rd.
+			</td>
+			<td class="av">
+				Portland
+			</td>
+			<td class="av">
+				97219
+			</td>
+			<td class="av">
+				USA
+			</td>
+			<td class="av">
+				<i id="va" style="color: #15adff ;"  class="fas fa-eye"></i>
+				<i id="va" style="color: yellow;" class="fas fa-pencil-alt"></i>
+				<i id="va" style="color: red;" class="fas fa-trash"></i>
+			</td>
+		</tr>
+		<tr class="av">
+			<td class="av">
+				2
+			</td>
+			<td class="av">
+				Maria Anders
+			</td>
+			<td class="av">
+				Obere Str. 57
+			</td>
+			<td class="av">
+				Berlin
+			</td>
+			<td class="av">
+				12209
+			</td>
+			<td class="av">
+				Germany
+			</td>
+			<td class="av">
+				<i id="va" style="color: #15adff ;"  class="fas fa-eye"></i>
+				<i id="va" style="color: yellow;" class="fas fa-pencil-alt"></i>
+				<i id="va" style="color: red;" class="fas fa-trash"></i>
+			</td>
+		</tr>
+		<tr class="av">
+			<td class="av">
+				3
+			</td>
+			<td class="av">
+				Fran Wilson
+			</td>
+			<td class="av">
+				C/Araquil,67
+			</td>
+			<td class="av">
+				Madrid
+			</td>
+			<td class="av">
+				28023
+			</td>
+			<td class="av">
+				Spain
+			</td>
+			<td class="av">
+				<i id="va" style="color: #15adff ;"  class="fas fa-eye"></i>
+				<i id="va" style="color: yellow;" class="fas fa-pencil-alt"></i>
+				<i id="va" style="color: red;" class="fas fa-trash"></i>
+			</td>
+		</tr>
+		<tr class="av">
+			<td class="av">
+				4
+			</td>
+			<td class="av">
+				Dominique Perrier
+			</td>
+			<td class="av">
+				25,rue Lauriston
+			</td>
+			<td class="av">
+				Paris
+			</td>
+			<td class="av">
+				75016
+			</td>
+			<td>
+				France
+			</td>
+			<td class="av">
+				<i id="va" style="color: #15adff ;"  class="fas fa-eye"></i>
+				<i id="va" style="color: yellow;" class="fas fa-pencil-alt"></i>
+				<i id="va" style="color: red;" class="fas fa-trash"></i>
+			</td>
+		</tr>
+		<tr class="av">
+			<td class="av">
+				5
+			</td>
+			<td class="av">
+				Martin Blank
+			</td>
+			<td class="av">
+				Via Monte Bianco 34
+			</td>
+			<td class="av">
+				Turin
+			</td>
+			<td class="av">
+				10100
+			</td>
+			<td class="av">
+				Italy
+			</td>
+			<td class="av">
+				<i id="va" style="color: #15adff ;"  class="fas fa-eye"></i>
+				<i id="va" style="color: yellow;" class="fas fa-pencil-alt"></i>
+				<i id="va" style="color: red;" class="fas fa-trash"></i>
+			</td>
+		</tr>
+	</table><br><br>
+	<!-- <p> -->
+		Showing <b style="color: slategrey;;">5</b> out of <b style="color:slategrey;">25</b> entries
+		<a style="margin-left:600px;">Previous
+		<b style="margin-left:30px; " class="circle">1</b>
+		<b style="margin-left:30px; " class="circle">2</b>
+		<b style="margin-left:30px;
+				background: #15adff;
+		 		padding: 10px;
+		  		color: white;" class="circle">3</b>
+		<b style="margin-left:30px; " class="circle">4</b>
+		<b style="margin-left:30px; " class="circle">5</b>
+		<b style="margin-left: 30px;">Next</b>
+		</a>
+	<!-- </p> -->
+</body>
+</html>

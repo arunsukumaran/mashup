@@ -1,0 +1,48 @@
+git init
+git add -A
+git commit -m "initial commit"
+
+git push origin master
+
+---------------------
+git branch develop
+git checkout develop
+
+git add -A
+git commit -m "initial develop commit"
+
+git push origin develop
+---------------------
+
+
+git clone url
+git fetch origin
+git checkout develop
+
+git branch feature-login
+git add -A
+git commit -m "feature implemented"
+
+git pull origin develop
+git add -A
+git commit -m "merge conflict fixed"
+git push origin feature-login
+------------------------------
+
+
+
+[team lead]
+git checkout develop
+git pull origin feature-login
+git push origin feature-login
+
+---------------------------------
+
+
+git checkout master
+git pull origin develop
+git push origin master
+
+[Git flow workflow]
+
+------------------------------

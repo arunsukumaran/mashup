@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EVENTS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button.c").click(function(){
+				$("p").hide();
+			});
+			$("button.c").dblclick(function(){
+				$("p").show();
+			});
+			$("button.c").mouseenter(function(){
+				$("p").css("background-color","red");
+			});
+			$("button.c").mouseleave(function(){
+				$("p").css("background-color","green");
+			});
+			$("button.u").mouseup(function(){
+				alert("yes");
+			});
+			$("button.d").mousedown(function(){
+				alert("no");
+			});
+			$("button.h").hover(function(){
+				alert("hovered");
+			});
+			$("button.f").focus(function(){
+				$("button.f").css("background-color","red")
+			});
+			$("button.b").blur(function(){
+				$("button.b").css("background-color","yellow")
+			});
+			$("button.o").on({
+				click:function(){
+				$("button.o").css("background-color","blue");},
+				mouseenter: function(){
+				$("button.o").css("background-color","red");},
+				mouseleave: function(){
+				$("button.o").css("background-color","yellow");},
+			})
+		});
+	</script>
+</head>
+<body>
+	<h1>
+		HEADING
+	</h1>
+	<p>HELLO WORLD</p>
+	<button class="c">CLICK ME 1</button>
+	<button class="u">CLICK ME 2</button>
+	<button class="d">CLICK ME 3</button>
+	<button class="h">CLICK ME 4</button>
+	<button class="f">CLICK ME 5</button>
+	<button class="b">CLICK ME 6</button>
+	<button class="o">CLICK ME 7</button>
+</body>
+</html>

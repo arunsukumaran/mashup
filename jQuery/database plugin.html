@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATABASE PLUGIN</title>
+	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style type="text/css">
+		tr,th,td{
+			border: 1px solid black;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+		<table id="#example" style="border: 1px solid black;border-collapse:collapse;">
+			<thead>
+				<tr><th>TABLE</th></tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th>Sl.no</th>
+				<th>Name</th>
+				<th>Pincode</th>
+				<th>Country</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>A</td>
+				<td>101</td>
+				<td>USA</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>B</td>
+				<td>102</td>
+				<td>Germany</td>
+			</tr>
+
+			<tr>
+				<td>103</td>
+				<td>C</td>
+				<td>103</td>
+				<td>Spain</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>D</td>
+				<td>104</td>
+				<td>France</td>
+			</tr>
+			</tbody>
+		</table>
+	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+  <script>
+  $(function(){
+    $("#example").dataTable();
+  })
+  </script>
+</body>
+</html>

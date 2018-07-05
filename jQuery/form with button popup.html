@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM WITH POPUP ALERT</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button.s").click(function(){
+				alert("Sure you want to SUBMIT")
+			});
+			$("button.r").click(function(){
+				alert("Sure you want to RESET")
+			});
+		});
+	</script>
+</head>
+<body>
+	<form name="frm1" style="border:2px solid black;margin: 50px;">
+		<center>
+			<h1 style="color:red;"><u>MASHUPSTACK</u></h1>
+			<h4 style="color:yellow;"><i><u>LOGINPAGE</u></i></h4><hr>
+			<label><h4 style="color:blue;">USER NAME</h4></label>
+			<input type="text" name="txt"><br>
+			<label><h4 style="color:blue;">PASSWORD</h4></label>
+			<input type="password" name="pas"><br><br>
+			<button class="s">Submit</button>
+			<button class="r">Reset</button>
+		</center>
+		</form>
+</body>
+</html>

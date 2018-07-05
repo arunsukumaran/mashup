@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATATABLE PLUGIN</title>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/jquery-3.3.1.js">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+	
+
+</head>
+<body>
+	<table id="example">
+		<thead>
+			<tr>
+				<td>Sl.no</td>
+				<td>Name</td>
+				<td>Age</td>
+				<td>Salary(in $)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>A</td>
+				<td>18</td>
+				<td>1100</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>B</td>
+				<td>19</td>
+				<td>2000</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>C</td>
+				<td>20</td>
+				<td>1500</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>D</td>
+				<td>25</td>
+				<td>1800</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>E</td>
+				<td>22</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>F</td>
+				<td>30</td>
+				<td>30000</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>G</td>
+				<td>20</td>
+				<td>1000</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>H</td>
+				<td>22</td>
+				<td>1300</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>I</td>
+				<td>21</td>
+				<td>1000</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>J</td>
+				<td>18</td>
+				<td>1500</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>K</td>
+				<td>19</td>
+				<td>1200</td>
+			</tr>	
+		</tbody>
+	</table>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+    	$('#example').dataTable();
+	});
+	</script>
+</body>
+</html>

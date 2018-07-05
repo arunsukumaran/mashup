@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<script Language="Javascript">
+		function plus( )
+			{
+				var num1,num2,result;
+				num1=document.frmcalc.txtNum1.value;
+				num2=document.frmcalc.txtNum2.value;
+				result=Number(num1)+Number(num2);
+				document.frmcalc.txtResult.value=result;
+			}
+				function minus( )
+			{
+				var num1,num2,result;
+				num1=document.frmcalc.txtNum1.value;
+				num2=document.frmcalc.txtNum2.value;
+				result=Number(num1)-Number(num2);
+				document.frmcalc.txtResult.value=result;
+			}
+				function div( )
+			{
+				var num1,num2,result;
+				num1=document.frmcalc.txtNum1.value;
+				num2=document.frmcalc.txtNum2.value;
+				result=Number(num1)/Number(num2);
+				document.frmcalc.txtResult.value=result;
+			}
+				function mul( )
+			{
+				var num1,num2,result;
+				num1=document.frmcalc.txtNum1.value;
+				num2=document.frmcalc.txtNum2.value;
+				result=Number(num1)*Number(num2);
+				document.frmcalc.txtResult.value=result;
+			}
+	</script>
+</head>
+<body>
+	<form name="frmcalc" style="border:2px solid black;margin: 50px;padding: 50px;">
+		<center>
+			Number 1
+			<input type="number" name="txtNum1">
+			<br><br>
+			Number 2
+			<input type="number" name="txtNum2">
+			<br><br>
+			<label>Process</label><select>
+				<option id="plus" onclick="plus()">+</option>
+				<option id="minus" onclick="minus()">-</option>
+				<option id="mult" onclick="mul()">*</option>
+				<option id="div" onclick="div()">/</option>
+			</select><br><br>
+			Answer
+			<input type="text" name="txtResult">
+			<br><br>
+			
+		</center>
+	</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REDIRECTING</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			 $('a.s').click(function(event)
+			 {
+	        	event.preventDefault();
+				 $('a.s').click(function(){
+				 		window.location.href="http://www.facebook.com"	
+			 	})
+			 });
+		});
+	</script>
+</head>
+<body>
+	<a href="http://www.example.com" class="s"> Eample Website </a>
+</body>
+</html>

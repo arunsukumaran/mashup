@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM POST</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		var minlengthn=3;
+		var minlength=8;
+		$(document).ready(function(){
+			$("button").click(function(event){
+				event.preventDefault();
+			var charLengthn=$("#name").val().length;
+			if (charLengthn<minlengthn) {
+				alert("Name should be at least 3 characters in length");
+				$("#name").css({'border' : '2px solid red'});
+
+			} else {}
+			var charLength=$("#password").val().length;
+			if (charLength<minlength) {
+				alert("Password should be atleast 8 characters in length");
+				$("#password").css({'border' : '2px solid red'});
+			} else {}
+			var charLengthc=$("#confirmpassword").val().length;
+			if (charLengthc<minlength) {
+				alert("Password should be atleast 8 characters in length");
+				$("#confirmpassword").css({'border' : '2px solid red'});
+			} else {}
+			$("input").attr("required","true");
+			});
+			
+			
+			$("button").on("click",function(){
+				if ($("#password").val()==$("#confirmpassword").val()) {}
+				 else {
+				 	alert("Input same password");
+				 }
+			});
+			$("button").click(function(){
+				if (true) {} else {}
+			});
+		});
+	</script>
+</head>
+<body>	
+	<form style="margin: 50px;padding: 100px;border: 2px solid black;background: skyblue;color: red;margin-top: 100px;">
+		<label>Name</label><input id="name" type="text" name="name"><br><br>
+		<label>Email</label><input id="email" type="email" name="email" ><br><br>
+		<label>Password</label><input id="password" type="password" name="password"><br><br>
+		<label>Confirm password</label><input id="confirmpassword" type="password" name="confirmpassword"><br><br>
+		<button>Submit</button>
+	</form>	
+</body>
+</html>

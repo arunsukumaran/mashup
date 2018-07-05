@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADDITION CALC</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#validate").click(function(event){
+				event.preventDefault();
+				var number1=$(".num1").val();
+				var number2=$(".num2").val();
+				var result=(Number(number1)+Number(number2));
+				$("#result").val(result);
+			});
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<label>Number1</label><input type="number" name="number1" class="num1"><br><br>
+		<label>Number2</label><input type="number" name="number2" class="num2"><br><br>
+		<label>Result</label><input type="number" name="result" id="result"><br><br>
+		<button id="validate">VALIDATE</button>
+	</form>
+</body>
+</html>

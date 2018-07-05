@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+		div.ex1{
+			border:3px solid white;
+			padding:40px;
+			margin:200px;
+			margin-top:80px;
+			margin-left:500px;
+			width:700px;
+			border-radius:30px;
+			background:Beige;
+				}
+		body{
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}

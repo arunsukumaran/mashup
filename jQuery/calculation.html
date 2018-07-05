@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATION</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<!-- <script type="text/javascript">
+		function sum()
+		{
+			var n1,n2,ans;
+			n1=document.frm.num1.value;
+			n2=document.frm.num2.value;
+			ans=Number(n1)+Number(n2);
+			document.frm.txt.value=ans;
+		}
+	</script> -->
+</head>
+<body>
+	<form name="frm" style="border:2px solid black;margin: 50px;padding: 50px;">
+		<label>Number 1</label><input type="number" name="num1" class="n1"><br><br>
+		<label>Number 2</label><input type="number" name="num2" class="n2">
+		<select id="selectorId">
+			<option id="plus">+</option>
+			<option id="minus">-</option>
+			<option id="mult">*</option>
+			<option id="divi">/</option>
+		</select><br><br>
+		<input class="a" type="text" name="txt" id="r">
+		<input type="submit" name="" value="submit" id="s">
+	</form>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	  $('#s').click(function(event){
+	  	event.preventDefault();
+	  	var num1=$('.n1').val();
+	  	alert("num1");
+	  	var num2=$('.n2').val();
+	  	var oper=$('#selectorId option:selected').val();
+	  	var n;
+	  	switch(n)
+	  	{
+	  		case #plus:
+	  		{
+	  			oper=num1+num2;
+	  			alert("oper")
+
+	  		}
+	  	}
+	  	$('#r').val(r);
+	  }); 
+});
+</script>
+</html>

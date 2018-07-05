@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HIDE AND SHOW</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+	    	$("button.h").click(function(){
+        	$("[href]").hide();
+	    	});
+	     	$("button.s").click(function(){
+	        $("[href]").show();
+	    	}); 
+		});
+	</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+<p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+<button class="h">Click me to hide</button>
+<button class="s">Click me to show</button>
+
+</body>
+</html>
